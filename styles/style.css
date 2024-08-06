@@ -2,4 +2,9 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
