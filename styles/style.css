@@ -8,3 +8,32 @@
   flex-direction: column;
   gap: 30px;
 }
+
+.header {
+  block-size: 100vh;
+}
+
+.header_title {
+  /* font-family: 'IBM Plex Mono'; */
+  font-size: 116px;
+  /* font-weight: 700; */
+  line-height: 95.7px;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px #FF0070;
+  /* text-align: left; */
+
+}
+
+.bg-text {
+  display: block;
+  background-color: #FF0070;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+.section-images {
+  width: 100%;
+}
