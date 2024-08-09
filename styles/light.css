@@ -1,5 +1,6 @@
 :root {
   --accent-color: #ff8dcb;
+  /*  */
 } 
 
 .page.theme_light {
@@ -8,4 +9,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-color: #FFF1F7;
+  --button-color: #353430;
+  --accent-color: #FFC2E6;
+  --text-color: #353430;
+  --background-image: url(../images/cover-image-light.png);
 }
