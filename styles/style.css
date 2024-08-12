@@ -1,38 +1,21 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-.page {background-attachment: fixed;
+.page {
   background-image: var(--background-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   color: var(--text-color);
   font-family: var(--font-family);
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .header {
-  background-repeat: no-repeat;
-  background-size: cover;
   block-size: 100vh;
   display: grid;
-  grid-template-rows: 11% 25% min-content min-content;
-  position: relative;
-}
-
-.rec::before {
-  content: 'REC';
-  position: absolute;
-  top: 10px;
-  inset-block-start: 10px;
-  /* right: 38px; */
-  inset-inline-end: 38px;
-  color: var(--accent-color);
-  font-size: 18px;
-  line-height: 1.4;
+  grid-template-rows: 9% 12% 48%;
+  /* position: relative; */
 }
 
 .rec::after {
@@ -47,42 +30,56 @@
   background-color: var(--accent-color);
 }
 
+.rec::before {
+  content: 'REC';
+  position: absolute;
+  top: 10px;
+  inset-block-start: 10px;
+  right: 38px;
+  inset-inline-end: 38px;
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 1.4;
+}
+
 .mini-border::before {
   content: '';
   position: absolute;
-  /* bottom: 10px; */
-  /* left: 10px; */
   inset-block-end: 10px;
   inset-inline-start: 10px;
   inline-size: 25px;
   block-size: 25px;
-  border-block-end: 1px solid #FF0070;
-  border-inline-start: 1px solid #FF0070;
+  border-block-end: 1px solid var(--button-color);
+  border-inline-start: 1px solid var(--button-color);
+}
+
+.theme_light .rec {
+  visibility: hidden;
 }
 
 .mini-border::after {
   content: '';
   position: absolute;
-  /* top: 10px; */
-  /* right: 10px; */
-  /* inset-inline-end: 1%; */
   inset-block-start: 10px;
   inset-inline-end: 10px; 
   align-self: end;
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid #FF0070;
-  border-inline-end: 1px solid #FF0070;
+  border-block-start: 1px solid var(--button-color);
+  border-inline-end: 1px solid var(--button-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
 }
 
 .header__theme-menu-list {
   list-style-type: none;
-
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 14px;
+  gap: 11px;
+
 }
 
 .header__theme-menu-button {
@@ -92,12 +89,11 @@
   text-transform: lowercase;
   font-size: 18px;
   line-height: 1;
-  cursor: pointer;
-  appearance: none;
+  /* appearance: none;
   position: relative;
-  /* padding: 0; */
+  padding: 0;
   padding-inline: 13px;
-  padding-block: 2px;
+  padding-block: 2px; */
   &:focus {
     outline: none;
   }
@@ -109,20 +105,24 @@
   }
 }
 
-.header_title {
-  /* font-family: 'IBM Plex Mono'; */
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  /* font-weight: 700; */
-  line-height: 95.7px;
-  color: #DB00FF;
-  text-shadow: 4px 4px 0px var(--accent-color);
-  /* text-align: left; */
-
+.header__theme-menu-button_active {
+  border: 1px solid var(--button-color);
 }
 
-.bg-text {
+.header_title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95.7px;
+  color: var(--main-text);
+  text-shadow: 4px 4px 0px #FF0070;
+}
+
+.header_description {
+  align-self: start;
+}
+
+.bg-text, h3, h4 {
   /* display: block; */
-  background-color: #FF0070;
+  background-color: var(--accent-color);
   color: #000028;
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -131,29 +131,46 @@
   text-align: left;
 }
 
-.header_description {
-  grid-column: 2 / 3;
-  background-color: var(--accent-color);
+h4 {
+font-weight: 400;
 }
 
-.section-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px 0;
+h2 {
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  color: var(--button-color);
+}
+
+p a {
+  color: inherit;
 }
 
 .section-images img {
   width: 100%;
   height: auto;
-  margin: 10px;
-  border-radius: 5px;
+  margin: 5px 0;
 }
 
-footer {
+.footer {
   block-size: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-title {
+font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+color: var(--main-text);
+text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+@media(min-width >= 768px) {
+  .header_description {
+    grid-column: 2 / 3;
+  }
+  
 }
