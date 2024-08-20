@@ -6,7 +6,7 @@
 }
 
 .header {
-  block-size: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-rows: 0% 37% 26% 37%;
   align-items: center;
@@ -126,7 +126,7 @@ main {
   line-height: 23.4px;
   margin-block-start: 10px;
 }
-/* h3, h4   */
+
 .bg-text {
   background-color: var(--accent-color);
   color: #000028;
@@ -148,7 +148,16 @@ h2 {
 }
 
 p a {
+  text-decoration: none;
   color: inherit;
+  text-shadow: 1px 1px var(--accent-color);
+  &:focus {
+    border: 1px solid var(--button-color);
+    border-color: inherit;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .section-images {
@@ -165,7 +174,7 @@ p a {
 }
 
 .footer {
-  block-size: 100vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
