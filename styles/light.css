@@ -15,7 +15,8 @@
   --background-image: url(../images/cover-image-light.png);
   --main-text: #FFC2E6;
   --name-content: #353430;
-
 }
 
-
+.theme_light .rec {
+  visibility: hidden;
+}
