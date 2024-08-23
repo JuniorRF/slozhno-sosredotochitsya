@@ -116,11 +116,11 @@ main {
   margin-block-start: 40px;
 }
 
-.margin-top-twenty{
+.margin-default{
   margin-block-start: 20px;
 }
 
-.margin-top-twenty-two {
+.margin-title {
   margin-block-start: 22px;
 }
 
@@ -241,15 +241,19 @@ text-shadow: 2px 2px 0 var(--accent-color);
     column-gap: 20px;
   }
 
-  .margin-start-ten {
+  .margin-column {
     margin-block-start: 10px;
   } 
   
-  .margin-start-twenty {
+  .margin-title-default {
     margin-block-start: 20px;
   }
 
-  .margin-start-thirty {
+  .margin-title-large {
+    margin-block-start: 30px;
+  }
+
+  .margin-section {
     margin-block-start: 30px;
   }
 
@@ -329,7 +333,7 @@ text-shadow: 2px 2px 0 var(--accent-color);
     max-width: 315px;
   }
 
-  .column {
+  .columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
