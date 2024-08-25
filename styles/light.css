@@ -5,6 +5,8 @@
   --text-color: #353430;
   --background-image: url(../images/cover-image-light.png);
   --main-text: #FFC2E6;
+  --button-hover: rgba(50, 49, 45, 0.4);
+  --button-focus: #FF0070;
 }
 
 .theme_light .rec {
