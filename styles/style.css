@@ -51,13 +51,13 @@
 .mini-border::after {
   content: '';
   position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 0; 
   align-self: end;
   inline-size: 25px;
   block-size: 25px;
   border-block-start: 1px solid var(--button-color);
   border-inline-end: 1px solid var(--button-color);
+  inset-block-start: 10px;
+  inset-inline-end: 0; 
 }
 
 .header__theme-menu-list {
@@ -116,7 +116,7 @@ main {
   margin-block-start: 40px;
 }
 
-.margin-default{
+.margin-default {
   margin-block-start: 20px;
 }
 
