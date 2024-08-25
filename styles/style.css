@@ -57,7 +57,7 @@
   border-block-start: 1px solid var(--button-color);
   border-inline-end: 1px solid var(--button-color);
   inset-block-start: 10px;
-  inset-inline-end: 0; 
+  inset-inline-end: 0;
 }
 
 .header__theme-menu-list {
@@ -205,7 +205,7 @@ text-shadow: 2px 2px 0 var(--accent-color);
   
   .mini-border::after {
     inset-block-start: 20px;
-    inset-inline-end: 0; 
+    inset-inline-end: 0;
   }
 
   .header {
@@ -326,7 +326,7 @@ text-shadow: 2px 2px 0 var(--accent-color);
   }
 
   .header_description {
-    margin-block-end: 0; 
+    margin-block-end: 0;
   }
 
   .two-columns {
