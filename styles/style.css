@@ -127,7 +127,7 @@ main {
 }
 
 .bg-text {
-  background-color: var(--accent-color);
+  background-color: var(--bg-text);
   color: #000028;
   font-size: 18px;
   font-weight: 700;
