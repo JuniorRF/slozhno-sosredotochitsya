@@ -3,6 +3,7 @@
   color: var(--text-color);
   font-family: var(--font-family);
   font-size: 18px;
+  padding-inline: 10px;
 }
 
 .header {
@@ -185,6 +186,10 @@ text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media(min-width: 768px) {
+  .page {
+    padding-inline: 20px;
+  }
+
   .rec::after {
     inset-block-start: 29px;
     inset-inline-end: 9px;
