@@ -1,4 +1,5 @@
 .page.theme_dark {
+  background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
   --font-family: 'IBM Plex mono', sans-serif;
   --accent-color: #ff0070;
